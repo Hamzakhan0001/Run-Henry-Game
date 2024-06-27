@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #fff ;
+    overflow-x: hidden;
+}
+
+.gameContainer{
+  background-image: url(backk.png);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  width: 100%;
+  height: 100vh;
+}
+
+.dino{
+    background-image: url(pngtree-dino-baby-png-image_6528109.png);
+    background-repeat: no-repeat ;
+    width: 230px;
+    height: 200px;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 45vw;
+
+}
+.kid{
+    background-image: url(pngtree-boy-running-sport-element-image_1206680-removebg-preview.png);
+    background-repeat: no-repeat ;
+    width: 280px;
+    height: 230px;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+
+}
+
+.animatedkid{
+    animation: kid 0.6s linear;
+}
+.dinoanimated{
+       animation: dinoanimated 5s linear infinite;
+}
+.gameover{
+    top: 63px;
+    font-size: 53px;
+    text-align: center;
+    position: relative;
+}
+
+#scoreCont{
+    position: relative;
+    left:1700px; 
+    border: 5px solid rgb(22, 60, 28);
+    padding: 10px;
+    width: 112px;
+    color: #fff;
+    font-weight: 1000;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+@keyframes kid {
+
+    0%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 422px;
+    }
+    100%{
+        bottom: 0;
+    }
+    
+}
+
+@keyframes dinoanimated {
+    0%{
+        left: 100vw;
+    }
+
+    100%{  
+        left: -10vw;
+
+    }
+    
+}
